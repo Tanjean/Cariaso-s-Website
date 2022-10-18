@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ABOUT HTML | CodingNepal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background: #ff7979;
+}
+::selection{
+  color: #fff;
+  background: #ff7979;
+}
+.wrapper{
+  max-width: 1080px;
+  margin: 50px auto;
+  padding: 0 20px;
+  position: relative;
+}
+.wrapper .center-line{
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background: #fff;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+}
+.wrapper .row{
+  display: flex;
+}
+.wrapper .row-1{
+  justify-content: flex-start;
+}
+.wrapper .row-2{
+  justify-content: flex-end;
+}
+.wrapper .row section{
+  background: #fff;
+  border-radius: 5px;
+  width: calc(50% - 40px);
+  padding: 20px;
+  position: relative;
+}
+.wrapper .row section::before{
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  top: 28px;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+.row-1 section::before{
+  right: -7px;
+}
+.row-2 section::before{
+  left: -7px;
+}
+.row section .icon,
+.center-line .scroll-icon{
+  position: absolute;
+  background: #f2f2f2;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ff7979;
+  font-size: 17px;
+  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
+}
+.center-line .scroll-icon{
+  bottom: 0px;
+  left: 50%;
+  font-size: 25px;
+  transform: translateX(-50%);
+}
+.row-1 section .icon{
+  top: 15px;
+  right: -60px;
+}
+.row-2 section .icon{
+  top: 15px;
+  left: -60px;
+}
+.row section .details,
+.row section .bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.row section .details .title{
+  font-size: 22px;
+  font-weight: 600;
+}
+.row section p{
+  margin: 10px 0 17px 0;
+}
+.row section .bottom a{
+  text-decoration: none;
+  background: #ff7979;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 5px;
+  /* font-size: 17px; */
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+.row section .bottom a:hover{
+  transform: scale(0.97);
+}
+@media(max-width: 790px){
+  .wrapper .center-line{
+    left: 40px;
+  }
+  .wrapper .row{
+    margin: 30px 0 3px 60px;
+  }
+  .wrapper .row section{
+    width: 100%;
+  }
+  .row-1 section::before{
+    left: -7px;
+  }
+  .row-1 section .icon{
+    left: -60px;
+  }
+}
+@media(max-width: 440px){
+  .wrapper .center-line,
+  .row section::before,
+  .row section .icon{
+    display: none;
+  }
+  .wrapper .row{
+    margin: 10px 0;
+  }
+}</style>
+<body>
+  <div class="wrapper">
+    <div class="center-line">
+      <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+    </div>
+    <div class="row row-1">
+      <section>
+        <i class="icon fas fa-home"></i>
+        <div class="details">
+          <span class="title">HTML INTRODUCTION
+          </span>
+          <span>    What is HTML?          </span>
+        </div>
+        <p>HTML stands for Hyper Text Markup Language<BR><BR>
+          HTML is the standard markup language for creating Web pages<BR><BR>
+          HTML describes the structure of a Web page<BR><BR>
+          HTML consists of a series of elements<BR><BR>
+          HTML elements tell the browser how to display the content<BR><BR>
+          HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.<BR><BR>
+          
+          
+          
+           </p>
+        <div class="bottom">
+          <a href="#">Read more</a>
+          <i>- w3schools</i>
+        </div>
+      </section>
+    </div>
+    <div class="row row-2">
+      <section>
+        <i class="icon fas fa-star"></i>
+        <div class="details">
+          <span class="title">HTML Editors</span>
+          <span>Learn HTML Using Notepad or TextEdit
+          </span>
+        </div>
+<p>Web pages can be created and modified by using professional HTML editors.
+
+  However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac).
+  
+  We believe that using a simple text editor is a good way to learn HTML.
+  
+  Follow the steps below to create your first web page with Notepad or TextEdit.</p>        <div class="bottom">
+          <a href="#">Read more</a>
+          <i>- w3schools</i>
+        </div>
+      </section>
+    </div>
+    <div class="row row-1">
+      <section>
+        <i class="icon fas fa-rocket"></i>
+        <div class="details">
+          <span class="title">THE SRC ATTRIBUTE </span>
+          <span>The src Attribute  </span>
+        </div>
+        <p>There are two ways to specify the URL in the src attribute:<BR>
+
+          1. Absolute URL - Links to an external image that is hosted on another website.<br><BR>
+          
+          Notes: External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control
+           external images; it can suddenly be removed or changed.<br><BR>
+          
+          2. Relative URL - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be 
+          relative to the current page. If the URL begins with a slash, it will be relative to the domain..<br><BR>
+          
+          Tip: It is almost always best to use relative URLs. They will not break if you change domain.<br>
+        </p>
+        <div class="bottom">
+          <a href="#">Read more</a>
+          <i>- w3schools</i>
+        </div>
+      </section>
+    </div>
+    <div class="row row-2">
+      <section>
+        <i class="icon fas fa-globe"></i>
+        <div class="details">
+          <span class="title">HTML ELEMENTS</span>
+          <span>Nested HTML Elements</span>
+        </div>
+        <P>HTML elements can be nested (this means that elements can contain other elements).
+
+          All HTML documents consist of nested HTML elements.
+          
+          The following example contains four HTML elements (html, body, h1 and p):
+          
+          </P>
+         <div class="bottom">
+          <a href="#">Read more</a>
+          <i>- w3schools</i>
+        </div>
+      </section>
+    </div>
+    <div class="row row-1">
+      <section>
+        <i class="icon fas fa-paper-plane"></i>
+        <div class="details">
+          <span class="title">HTML HEADINGS</span>
+          <span>Headings Are Important
+          </span>
+        </div>
+        <p>Search engines use the headings to index the structure and content of your web pages.
+
+          Users often skim a page by its headings. It is important to use headings to show the document structure.
+          
+          h1 headings should be used for main headings, followed by h2 headings, then the less important h3, and so on.
+          
+          </p>
+
+        <div class="bottom">
+          <a href="#">Read more</a>
+          <i>- w3schools</i>
+        </div>
+      </section>
+    </div>
+    <div class="row row-2">
+      <section>
+        <i class="icon fas fa-map-marker-alt"></i>
+        <div class="details">
+          <span class="title">HTML PARAGRAPHS</span>
+          <span>HTML Display</span>
+        </div>
+        <p>You cannot be sure how HTML will be displayed.<BR><BR>
+
+          Large or small screens, and resized windows will create different results.<BR><BR>
+          
+          With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.<BR><BR>
+          
+          The browser will automatically remove any extra spaces and lines when the page is displayed:<BR><BR>
+          
+          </p>
+        <div class="bottom">
+          <a href="#">Read more</a>
+          <i>- w3schools</i>
+        </div>
+      </section>
+    </div>
+    <div class="row row-1">
+      <section>
+        <i class="icon fas fa-rocket"></i>
+        <div class="details">
+          <span class="title">HTML STYLES CSS
+          </span>
+          <span>What is CSS?
+          </span>
+        </div>
+        <p>Cascading Style Sheets (CSS) is used to format the layout of a webpage.
+
+          With CSS, you can control the color, font, the size of text, the spacing between elements,
+           how elements are positioned and laid out, what background images or background colors are to be used, different 
+           displays for different devices and screen sizes, and much more!<BR><BR>
+          
+            CSS can be added to HTML documents in 3 ways:<BR><BR>
+
+            Inline - by using the STYLE attribute inside HTML elements<BR><BR>
+            Internal - by using a STYLE element in the HEAD section<BR><BR>
+            External - by using a LINK element to link to an external CSS file<BR><BR>
+            </p>
+        <div class="bottom">
+          <a href="#">Read more</a>
+          <i>- w3schools</i>
+        </div>
+      </section>
+    </div>
+    <div class="row row-2">
+      <section>
+        <i class="icon fas fa-globe"></i>
+        <div class="details">
+          <span class="title">HTML LINKS</span>
+          <span>Hyperlinks & Syntax</span>
+        </div>
+        <p>HTML links are hyperlinks.<br><br>
+
+          You can click on a link and jump to another document.<br><br>
+          
+          When you move the mouse over a link, the mouse arrow will turn into a little hand.<br><br>
+          
+          </p>
+          <p>The most important attribute of the a element is the href attribute, which indicates the link's destination.<br><br>
+
+            The link text is the part that will be visible to the reader.<br><br>
+            
+            Clicking on the link text, will send the reader to the specified URL address.<br><br></p>
+        <div class="bottom">
+          <a href="#">Read more</a>
+          <i>- w3schools</i>
+        </div>
+      </section>
+    </div>
+    <div class="row row-1">
+      <section>
+        <i class="icon fas fa-paper-plane"></i>
+        <div class="details">
+          <span class="title">HTML TABLES</span>
+          <span>Define an HTML Table, Rows & Columns
+          </span>
+        </div>
+        <p>HTML tables allow web developers to arrange data into rows and columns. <BR><BR>
+        
+          A table in HTML consists of table cells inside rows and columns.<BR><BR>
+
+            Each table cell is defined by a td and a td close tag.<BR><BR>
+
+              Each table row starts with a tr and ends with a tr close tag.<BR><BR>
+
+                Sometimes you want your cells to be table header cells. In those cases use the <th> tag instead of the <td> tag:<BR><BR>
+
+        </p>
+        <div class="bottom">
+          <a href="#">Read more</a>
+          <i>- w3schools</i>
+        </div>
+      </section>
+    </div>
+    <div class="row row-2">
+      <section>
+        <i class="icon fas fa-map-marker-alt"></i>
+        <div class="details">
+          <span class="title">HTML BLOCK AND INLINE ELEMENTS         </span>
+          <span>Block-level Elements  & Inline Elements          </span>
+        </div>
+        <p>There are two display values: block and inline<BR><BR>
+          A block-level element always starts on a new line and takes up the full width available<BR><BR>
+          An inline element does not start on a new line and it only takes up as much width as necessary<BR><BR>
+          The <div> element is a block-level and is often used as a container for other HTML elements<BR><BR>
+          The <span> element is an inline container used to mark up a part of a text, or a part of a document<BR><BR>
+          </p>
+        <div class="bottom">
+          <a href="#">Read more</a>
+          <i>- w3schools</i>
+        </div>
+      </section>
+    </div>
+  </div>
+  </div>
+
+</body>
+</html>
